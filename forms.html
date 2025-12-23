@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Page</title>
+    <style>
+      *{
+         margin: 0px;
+         padding: 0px;
+         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .head{
+
+         width: 100%;
+         height: 5vw;
+        background-color: cornflowerblue;
+      }
+      .h{
+         color: black;
+         margin-left:48vw ;
+         padding-top: 1vw;
+      }
+      body{
+      background-color: darkgray;
+      }
+      .box{
+         border: 2px solid black;
+         width:40vw;
+         height: 35vw;
+         margin-left: 30vw;
+         margin-top: 5vw;
+         border-radius: 10px;
+         text-align: center;
+         padding: 2vw;
+      }
+      label{
+         font-size: large;
+      }
+      input[type="text"],input[type="email"] 
+      textarea{
+         width:15;
+         height: 2vw;
+         border-radius: 5px;
+         border: 0.5px soild black;
+      }
+      input[type="radio"]{
+         width: 2vw;
+      }
+      select{
+         width: 5vw;
+         height:2vw;
+         border-radius: 10px;
+      }
+      .btn{
+         margin-left: 50vw;
+         margin-top: 1vw;
+         width:6vw;
+         height: 2vw;
+         font-size: 1vw;
+         border-radius: 10px;
+         background-color:aqua;
+
+      }
+      .btn:hover{
+         background-color: greenyellow;
+         width: 100px;
+      }
+      input[type="text"]:hover{
+         border: 3px solid blue;
+         
+      }
+      input[type="email"]:hover{
+         border: 3px soild blue;
+      }
+       textarea:hover{
+         border: 3px soild blue;
+      }
+    </style>
+</head>
+<body>
+
+    <div class="head">
+      <h1 class="h">Form</h1>
+    </div>
+   <div class="box">
+      <form>
+        <label for="">
+        ID:
+        <input type="text"placeholder="enter your id">
+     </label><br><br>
+     <label for="">
+        Name:
+        <input type="text"placeholder="enter your name">
+     </label><br><br>
+     <label for="">
+        Email:
+        <input type="text"placeholder="enter your email"
+     </label> <br><br>
+     <label for="">
+        Gender:
+        <input type="radio">Male
+        <input type="radio">Female
+     </label><br><br>
+     <label for=""> 
+       phone number:
+       <input type="text"placeholder="enter your phn number"
+     </label><br><br>
+     <label for="">
+      Address:
+      <textarea  name=""id=""rows="4"cols="30"></textarea>
+   </label><br><br>
+     <label for="">
+      Branch:
+      <select name="" id="">
+         <option value="">CSE</option>
+         <option value="">AIML</option>
+         <option value="">AIDS</option>
+      </select>
+      </label><br><br>
+      </form>
+      </div>
+      <button class="btn">submit</button> 
+</body>
+</html>
