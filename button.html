@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #box{
+            width: 25vw;
+            height: 30vw;
+            border:2px solid black;
+        }
+    </style>
+    <div id='box'>
+    </div>
+     <button id='Black'>Black</button>
+    <button id='Green'>Green</button>
+    <button id='Blue'>Blue</button>
+     <script>
+        document.getElementById('Black').addEventListener("click",process)
+        document.getElementById('Green').addEventListener("click",process)
+        document.getElementById('Blue').addEventListener("click",process)
+    function process(event){
+        let v1;
+        v1 = document.getElementById('box')
+        box.style.background = event.target.innerText
+    }
+    </script>
+</body>
+</html>
