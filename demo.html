@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>head</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .head{
+            width:100%;
+            height:50px;
+            background-color: rgb(43, 226, 80);
+        }
+        h1{
+            color : pink;
+            margin-left: 48vw;
+            padding-top: 1vw;
+        }
+        .box{
+            border:2px solid black;
+            width:40vw;
+            height:25vw;
+            margin-left:30vw;
+            margin-top:5vw;
+            border-radius:10px;
+            text-align: center;
+            padding:2vw;
+            }
+        label {
+            font-size: large;
+        }
+        input[type="text"],input[type="email"],textarea{
+            width:15vw;
+            height:2vw;
+            border-radius:5px;
+            border: 0.5px solid black;
+        }
+        input[type="radio"]{
+            width:2vw;
+        }
+        select{
+            width:5vw;
+            height:2vw;
+            border-radius: 10px;
+        }
+        .btn{
+            margin-left: 50vw;
+            margin-top: 1vw;
+            width:6vw;
+            height:2vw;
+            font-size: 1vw;
+            border-radius: 10px;
+            background-color: aqua;
+        }
+        .btn:hover{
+            background-color: aqua;
+            width:100px;
+        }
+        input[type="text"]:hover{
+            border:3px soloid green;
+        }
+        input[type="email"]:hover{
+            border:3px solid blueviolet;
+        }
+        textarea:hover{
+            border:3px solid blue;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div class="head"></div>
+<body>
+    <div>"head">
+ <h1 class ="h1">form</h1>
+ <center>
+    <h1>Form</h1>
+ </center>
+ <label for="">
+    ID:
+    <input type="text" placeholder="Enter your ID">
+ </label><br><br>
+ <label for="">
+    Email:
+    <input type="email" placeholder="Enter your email">
+ </label><br><br>
+ <label for="">
+    phone number:
+    <input type="phone number" placeholder="Enter phone number">
+ </label><br><br>
+ <label for="">
+ Gender:
+ <input type="radio" name="Gender">male
+ <input type="radio" name="Gender">female
+ </label><br><br>
+ <label for="">
+    Address:
+        <textarea name="" id="" rows="4" cols="30"></textarea>
+    </label><br><br>
+    <label for="">
+        Branch:
+        <select>
+        <option value="">cse</option>
+        <option value="">aiml</option>
+        </select>
+    </label><br><br>
+        </form>
+        <button class="btn">submit</button>
+</body>
+</html>
