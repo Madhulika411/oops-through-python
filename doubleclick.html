@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .card1{
+            width: 40vw;
+            height: 10vw;
+            border: 20px soild black;
+            text-align: center;
+        }
+        .card2{
+            width:40vw;
+            height:10vw;
+            border: 20px soild black;
+            text-align: center;
+        }
+    </style>
+    <div class ="card1">Not clicked</div><br><br>
+    <div class ="card2">Not clicked</div><br><br>
+    <button onclick="firstclick()" ondblclick="dbclick()">check</button>
+    <script>
+        function firstclick(event){
+            let c = document.querySelector(".card1")
+            c.innerHTML = "Clicked"
+            c.style.backgroundColor = "pink"
+            c.style.border= "4px solid blue"
+        }
+        function dbclick(event){
+            let i;
+            i=document.querySelector(".card2")
+             i.innerHTMl = "Clicked"
+            i.style.backgroundColor = "blue"
+            i.style.border = "4px soild pink"
+        }
+    </script>
+       
+
+    
+</body>
+</html>
