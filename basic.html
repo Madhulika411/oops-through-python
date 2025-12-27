@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <label for="">
+        value1:
+        <input type="text" id="v1">
+    </label>
+    <label for="">
+        value2:
+        <input type="text" id="v2">
+    </label>
+   <button id="btn">Add</butt on>
+    <p id="p_tag"></p>
+    <script>
+        document.getElementById("btn").addEventListener("click",addition)
+        function addition(event){
+            let t1,t2,res,p;
+            t1= parseInt(document.getElementById("v1").value)
+            t2= parseInt(document.getElementById("v2").value)
+            res = t1+t2
+            p.innerHTML = res;
+            console.log(res)
+        }
+    </script>
+
+</body>
+</html>
