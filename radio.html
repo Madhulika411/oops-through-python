@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <style>
+        #box{
+            width: 50vw;
+            height: 30vw;
+            border:2px solid black;
+        }
+    </style>
+    <div id="box">
+    </div>
+    <label for="">
+        Black
+        <input type = "radio" name="cls" value="Red" class="bg">
+    </label>
+    <label for="">
+        Blue
+        <input type ="radio" name="cls" value="Blue" class="bg">
+    </label>
+    <label for="">
+        yellow
+        <input type = "radio" name="cls" value="yellow" class="bg">
+    </label>
+    <script>
+        let r;
+        r = document.getElementsByClassName('bg')
+        for(let i of r){
+            i.addEventListener('change',process)
+        }
+        function process(event){
+            let box1;
+            box1=document.getElementById('box')
+            box1.style.backgroundColor = event.target.value
+        
+        }
+    </script>
+</body>
+</html>
