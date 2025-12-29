@@ -1,0 +1,204 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0px;
+        }
+        header{
+            background-color: rgb(255, 255, 255);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom:2px solid skyblue;
+        }
+        .hero{
+            text-align: center;
+            padding:40px 60px;
+            background-color: #05276d;
+            color: white;
+        }
+        .hero h1{
+            font-size: 40px;
+        }
+        .hero p{
+            margin-top: 40px;
+        }
+        .btn{
+            margin-top: 20px;
+            padding: 12px;
+            border:2px solid blue;
+            border-radius: 2vw;
+
+        }
+        .luna h2 {
+            font-size: 25px;
+            color: blue;
+
+        }
+        .skills{
+            display: flex;
+            padding: 2opx;
+
+        }
+        .s{
+            border: 2px solid black;
+            padding: 10px;
+            border-radius:10px ;
+            background-color: rgb(254, 255, 196);
+            margin-top: 20px;
+        }
+         .s:hover{
+            border: 2px solid red;
+        }
+        .moon{
+            font-size: 20px;
+            color:blue;
+        }
+        .p{
+            display: flex;
+            gap: 10px;
+        
+        }
+        .c{
+            border: 2px solid black;
+            width: 20vw;
+            height: 7vw;
+            border-radius: 10px;
+    
+        }
+        .c:hover{
+            border: 2px solid red;
+        }
+        .m{
+            border-radius: 2vw;
+            border: 2px solid blue;
+            text-align: center;
+            width: 4vw;
+        
+        }
+        #z{
+            font-size: 25px;
+            color: blue;
+        }
+        .new{
+            font-size: 25px;
+            color: blue;
+        }
+        .o{
+            border: 2px solid black;
+            height: 10vw;
+            border-radius: 10px;
+            margin-right: 31vw;
+            
+        }
+        .o:hover{
+            border: 2px solid red;
+        }
+        .r{
+            text-align: center;
+            color:black;
+            background-color: beige;
+    
+        }
+    </style>
+</head>
+<body>
+    <header>
+     <h2 id="StudentName">StudentName</h2>
+        <nav>
+            <a href="#About">About</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+    
+   <div class="hero">
+    <h1>Your name</h1>
+    <p id="roleText">B.Tech 1st Year|Aspiring Full-stack Developer</p>
+        <button  class="btn" onclick="Updateintro()">Update intro</button>
+        <button class="btn"  onclick="DownloadResume()">Download Resume</button>
+
+    </div>
+   <section id="About"></section>
+   <div class="luna"><br>
+    <h2>AboutMe</h2><br>
+    <hr>
+        <p id="aboutText"> ia am B.Tech 2nd year Computer Science Student interesterd in web development. i enjoy buildinf websites using core web technologies.</p>
+   </div><br><br>
+   <section id="Skills"></section>
+   <div class="moon">
+    <h3>Technical Skills</h3><br>
+    <hr></hr>
+    <div class="skills"><br>
+        <p class="s">HTML</p>&nbsp;&nbsp;
+        <p class="s">CSS</p>&nbsp;&nbsp;
+        <p class="s">JavaScript</p>&nbsp;&nbsp;
+        <p class="s">Python</p>&nbsp;&nbsp;
+        <p class="s">SQL</p>&nbsp;&nbsp;
+        <p class="s">Django</p>&nbsp;&nbsp;
+    </div><br><br>
+   </div>
+    <section class="project">
+        <h3 id="z">Projects</h3>
+        <hr></hr>
+        <br>
+        <div class="p">
+            <div class="c">
+                <h3>Student Portfolio</h3>
+                <p> Personal portfolio website using HTML, CSS and JavaScript </p><br>
+                <button class="m" onclick="project1()">view</button>
+            </div>
+            <div class="c">
+                <h3>Js Calculator</h3>
+                <p>Calculator using DOM events and functions.</p><br>
+                <button class="m" onclick="project2()">view</button>
+            </div>
+            <div class="c">
+                <h3>Student Result App</h3>
+                <p> Marks calculation and grade display.</p><br>
+                <button class="m" onclick="project3()">view</button>
+            </div>
+        </div>
+    </section><br><br>
+    <section id="Contact"></section>
+    <div class="new">
+        <h3 >Contact Details</h3></div>
+        <hr></hr>
+        <br>
+        <div class="o"><br>
+            <b>Email:</b>Madhulika@gmail.com.com<br>
+            <b>Phone:</b>+9876542321<br>
+            <b>Location:</b>kerala,india<br>
+            <b>GitHub:</b>github.commadhu<br>
+        </div>
+    </div>
+      <script>
+      function project1(event){
+                        window.open("madhu.html")
+                    }
+                    function project2(event){
+                        window.open("btn.html")
+                    }
+                    function project3(event){
+                        window.open("c.html")
+                    }
+                </script>
+                <script>
+                    function Updateintro(event){
+                        document.getElementById("roleText").innerHTML="Frontend Developer | Passionate Learner";
+                        document.getElementById("aboutText").innerHTML= "This portfolio shows my skills in buliding websites using pure content"
+                    }
+                </script>
+                <footer>
+                    <hr><hr>
+                    <p class="r">2025 StudentName| protofilo</p>
+                </footer>
+            
+</body>
+</html>
